@@ -1,0 +1,37 @@
+int main()
+{
+    double num1,num2;
+ char chr;
+ printf("Enter the value of num1:");
+ scanf("%lf",&num1);
+ printf("Enter the value of num2:");
+ scanf("%lf",&num2);
+ 
+ 
+ printf("+.Addition \n");
+ printf("-.Subtraction \n");
+ printf("*.Multiplication \n");
+ printf("/.Division \n");
+ 
+ printf("Enter your choice:");
+ scanf(" %c",&chr);
+ 
+ switch(chr){
+    case '+':
+        printf("%.1lf + %.1lf = %.1lf", num1, num2, num1 + num2);
+        break;
+    case '-':
+        printf("%.1lf - %.1lf = %.1lf", num1, num2, num1 - num2);
+        break;
+    case '*':
+        printf("%.1lf * %.1lf = %.1lf", num1, num2, num1 * num2);
+        break;
+    case '/':
+        printf("%.1lf / %.1lf = %.1lf", num1, num2, num1 / num2);
+        break;
+    default:
+        printf("Error! Wrong operator.");
+    }
+    
+    return 0;
+}
