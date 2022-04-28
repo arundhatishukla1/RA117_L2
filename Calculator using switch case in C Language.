@@ -1,6 +1,6 @@
 int main()
 {
-    double num1,num2;
+   double num1,num2;
  char chr;
  printf("Enter the value of num1:");
  scanf("%lf",&num1);
